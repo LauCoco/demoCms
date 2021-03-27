@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valideur-teches",
+      "handler": "valideur-tech.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-teches/count",
+      "handler": "valideur-tech.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-teches/:id",
+      "handler": "valideur-tech.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valideur-teches",
+      "handler": "valideur-tech.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valideur-teches/:id",
+      "handler": "valideur-tech.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valideur-teches/:id",
+      "handler": "valideur-tech.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

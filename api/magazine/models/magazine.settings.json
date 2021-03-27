@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "magazines",
+  "info": {
+    "name": "Magazine"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "integer"
+    },
+    "pages": {
+      "collection": "page"
+    }
+  }
+}

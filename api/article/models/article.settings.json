@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "rubriques": {
+      "private": true,
+      "collection": "rubrique",
+      "via": "articles"
+    },
+    "isValidated_sirpat": {
+      "type": "boolean"
+    },
+    "isValidated_section": {
+      "type": "boolean"
+    },
+    "contributeur": {
+      "private": true,
+      "model": "contributeur"
+    }
+  }
+}

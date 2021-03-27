@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valideur-sections",
+      "handler": "valideur-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-sections/count",
+      "handler": "valideur-section.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-sections/:id",
+      "handler": "valideur-section.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valideur-sections",
+      "handler": "valideur-section.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valideur-sections/:id",
+      "handler": "valideur-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valideur-sections/:id",
+      "handler": "valideur-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

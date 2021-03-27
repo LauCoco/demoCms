@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "valideur_sections",
+  "info": {
+    "name": "Valideur section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "dateNaiss": {
+      "type": "datetime"
+    }
+  }
+}

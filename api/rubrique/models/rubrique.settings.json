@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rubriques",
+  "info": {
+    "name": "Rubrique",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "presentation": {
+      "type": "richtext"
+    },
+    "articles": {
+      "via": "rubriques",
+      "collection": "article",
+      "dominant": true
+    },
+    "pages": {
+      "collection": "page"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contributeurs",
+      "handler": "contributeur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contributeurs/count",
+      "handler": "contributeur.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contributeurs/:id",
+      "handler": "contributeur.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contributeurs",
+      "handler": "contributeur.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contributeurs/:id",
+      "handler": "contributeur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contributeurs/:id",
+      "handler": "contributeur.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

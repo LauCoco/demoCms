@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valideur-sirpats",
+      "handler": "valideur-sirpat.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-sirpats/count",
+      "handler": "valideur-sirpat.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valideur-sirpats/:id",
+      "handler": "valideur-sirpat.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valideur-sirpats",
+      "handler": "valideur-sirpat.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valideur-sirpats/:id",
+      "handler": "valideur-sirpat.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valideur-sirpats/:id",
+      "handler": "valideur-sirpat.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
